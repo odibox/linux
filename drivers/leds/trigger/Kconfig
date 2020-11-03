@@ -41,6 +41,14 @@ config LEDS_TRIGGER_DISK
 	  This allows LEDs to be controlled by disk activity.
 	  If unsure, say Y.
 
+config LEDS_TRIGGER_ACTIVITY
+	tristate "LED activity Trigger"
+	help
+	  This allows LEDs to be controlled by an immediate CPU usage.
+	  The flash frequency and duty cycle varies from faint flashes to
+	  intense brightness depending on the instant CPU load.
+	  If unsure, say N.
+	  
 config LEDS_TRIGGER_MTD
 	bool "LED MTD (NAND/NOR) Trigger"
 	depends on MTD

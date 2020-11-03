@@ -39,7 +39,7 @@
 #define PCIE_PHY_DEBUG_R1_LINK_UP	(0x1 << 4)
 #define PCIE_PHY_DEBUG_R1_LINK_IN_TRAINING	(0x1 << 29)
 
-#define    WAIT_LINKUP_TIMEOUT         2000
+#define    WAIT_LINKUP_TIMEOUT         10000
 
 enum pcie_data_rate {
 	PCIE_GEN1,
